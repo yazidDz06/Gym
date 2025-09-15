@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; 
 import logo from "../assets/Yazz Club.png";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,18 +42,38 @@ export default function Navbar() {
 
       {isOpen && (
         <div className="absolute top-20 left-0 w-full bg-black flex flex-col items-center gap-6 py-6 md:hidden z-50">
-          <a href="#" className="text-white text-lg font-semibold hover:text-gray-300 transition">
-            Home
-          </a>
-          <a href="#work" className="text-white text-lg font-semibold hover:text-gray-300 transition">
-            How it works
-          </a>
-          <a href="#plans" className="text-white text-lg font-semibold hover:text-gray-300 transition">
-            Pricing
-          </a>
-          <a href="#footer" className="text-white text-lg font-semibold hover:text-gray-300 transition">
-            Contact
-          </a>
+          <Link
+          to=""
+          
+          className="text-white text-lg font-semibold hover:text-gray-300 cursor-pointer transition"
+          onClick={() => setIsOpen(false)}
+        >
+          Home
+        </Link>
+        <Link
+          to="work"
+          
+          className="text-white text-lg font-semibold hover:text-gray-300 cursor-pointer transition"
+          onClick={() => setIsOpen(false)}
+        >
+          How it works
+        </Link>
+        <Link
+          to="plans"
+          
+          className="text-white text-lg font-semibold hover:text-gray-300 cursor-pointer transition"
+          onClick={() => setIsOpen(false)}
+        >
+          Pricing
+        </Link>
+        <Link
+          to="footer"
+         
+          className="text-white text-lg font-semibold hover:text-gray-300 cursor-pointer transition"
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+        </Link>
         </div>
       )}
     </nav>
