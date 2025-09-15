@@ -44,13 +44,13 @@ export default function Navbar() {
           <a href="#" className="text-white text-lg font-semibold hover:text-gray-300 transition">
             Home
           </a>
-          <a href="#" className="text-white text-lg font-semibold hover:text-gray-300 transition">
+          <a href="#work" className="text-white text-lg font-semibold hover:text-gray-300 transition">
             How it works
           </a>
-          <a href="#" className="text-white text-lg font-semibold hover:text-gray-300 transition">
+          <a href="#plans" className="text-white text-lg font-semibold hover:text-gray-300 transition">
             Pricing
           </a>
-          <a href="#" className="text-white text-lg font-semibold hover:text-gray-300 transition">
+          <a href="#footer" className="text-white text-lg font-semibold hover:text-gray-300 transition">
             Contact
           </a>
         </div>
