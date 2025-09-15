@@ -1,0 +1,13 @@
+#firstsection {
+ background-color: black;
+    background-size: cover;        /* remplit toute la zone */
+  background-position: center;   /* centre l’image */
+  background-repeat: no-repeat;  /* évite la répétition */
+  min-height: 100vh;             /* prend toute la hauteur de l’écran */
+  display: flex;                 /* permet de centrer le contenu */
+  align-items: center;           /* centre verticalement */
+  justify-content: center;       /* centre horizontalement */
+  padding: 2rem;
+  border-top: none;
+  box-shadow: none;
+}
